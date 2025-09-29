@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task1 {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         char xChar;
         int a, b, x;
         System.out.println("Введите номер задания (от 1 до 5): ");
@@ -64,8 +64,8 @@ public class Task1 {
         }
     }
 
-    public int sumLastNums(int x) {
-        if (x / 100 != 0) {
+    public static int sumLastNums(int x) {
+        if (x / 10 != 0) {
             int lastDigit = x % 10;
             int secondLastDigit = (x / 10) % 10;
 
@@ -73,10 +73,10 @@ public class Task1 {
             return y;
         }
 
-        return 0;
+        return x;
     };   
 
-    public boolean isPositive(int x) {
+    public static boolean isPositive(int x) {
         if (x > 0) {
             return true;
         }
@@ -84,7 +84,7 @@ public class Task1 {
         return false;
     }
 
-    public boolean isUpperCase(char x) {
+    public static boolean isUpperCase(char x) {
         if (x >= 'A' && x <= 'Z') {
             return true;
         }
@@ -92,7 +92,7 @@ public class Task1 {
         return false;
     }
 
-    public boolean isDivisor(int a, int b) {
+    public static boolean isDivisor(int a, int b) {
         if (b % a == 0 || a % b == 0) {
             return true;
         }
@@ -100,7 +100,7 @@ public class Task1 {
         return false;
     }
 
-    public int lastNumSum(int a, int b) {
+    public static int lastNumSum(int a, int b) {
         if (a / 10 != 0) {
             a = a % 10;
         }

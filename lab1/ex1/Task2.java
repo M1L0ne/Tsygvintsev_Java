@@ -2,9 +2,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task2 {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         String xString;
-        int a, b, x, y, z;
+        int x, y, z;
         System.out.println("Введите номер задания (от 1 до 5): ");
         Scanner sc = new Scanner(System.in);
         int taskNum = sc.nextInt();
@@ -58,7 +58,7 @@ public class Task2 {
         }
     }
 
-    public double safeDiv(int x, int y) {
+    public static double safeDiv(int x, int y) {
         try {
             return x / y;
         } catch (Exception ArithmeticException) {
@@ -66,7 +66,7 @@ public class Task2 {
         }
     }
 
-    public String makeDecision(int x, int y) {
+    public static String makeDecision(int x, int y) {
         if (x > y) {
             return (x + " > " + y);
         }
@@ -78,7 +78,7 @@ public class Task2 {
         }
     }
 
-    public boolean sum3(int x, int y, int z) {
+    public static boolean sum3(int x, int y, int z) {
         if (x + y == z || x + z == y || y + z == x) {
             return true;
         }
@@ -86,7 +86,7 @@ public class Task2 {
         return false;
     }
 
-    public String age(int x) {
+    public static String age(int x) {
         int divX = x % 10;
         if (divX == 1) {
             return (x + " год");
@@ -99,7 +99,7 @@ public class Task2 {
         }
     }
 
-    public void printDays(String x) {
+    public static void printDays(String x) {
         String[] days = {"понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"};
         switch (x) {
             case "понедельник":
