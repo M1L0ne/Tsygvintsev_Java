@@ -78,14 +78,17 @@ public class Task4 {
 
     public static void printArray(int[] arr) {
         System.out.print("[ ");
+
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
+
         System.out.print("]");
     }
 
     public static int findLast(int[] arr, int x) {
         int iFound = -1;
+
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
                 iFound = i;
@@ -98,6 +101,7 @@ public class Task4 {
     public static int[] add(int[] arr, int x, int pos) {
         int[] newArr = new int[arr.length + 1];
         int j = 0;
+
         for (int i = 0; i < newArr.length; i++) {
             if (i == pos) {
                 newArr[i] = x;
@@ -106,11 +110,13 @@ public class Task4 {
             newArr[i] = arr[j];
             j++;
         }
+
         return newArr;
     }
 
     public static void reverse(int[] arr) {
         int[] newArr = new int[arr.length];
+
         for (int i = arr.length-1; i >= 0; i--) {
             System.out.print(arr[i] + " ");
         }
@@ -118,9 +124,11 @@ public class Task4 {
 
     public static int[] concat(int[] arr1, int[] arr2) {
         int[] newArr = new int[arr1.length + arr2.length];
+
         for (int i = 0; i < arr1.length; i++) {
             newArr[i] = arr1[i];
         }
+
         for (int i = 0; i < arr2.length; i++) {
             newArr[i + arr1.length] = arr2[i];
         }
@@ -130,6 +138,7 @@ public class Task4 {
 
     public static int[] deleteNegative(int[] arr) {
         int newArrLength = 0;
+
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
                 newArrLength++;
@@ -138,12 +147,14 @@ public class Task4 {
 
         int[] newArr = new int[newArrLength];
         int j = 0;
+
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
                 newArr[j] = arr[i];
                 j++;
             }
         }
+
         return newArr;
     }
 }

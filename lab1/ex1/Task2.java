@@ -88,6 +88,7 @@ public class Task2 {
 
     public static String age(int x) {
         int divX = x % 10;
+
         if (divX == 1) {
             return (x + " год");
         }

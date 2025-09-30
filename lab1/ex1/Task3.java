@@ -55,6 +55,7 @@ public class Task3 {
 
     public static String reverseListNums(int x) {
         String str = "";
+
         for (int i = x; i >= 0; i--) {
             str = str + i;
         }
@@ -64,6 +65,7 @@ public class Task3 {
 
     public static int pow(int x, int y) {
         int result = 1;
+
         for (int i = 0; i < y; i++) {
             result = result * x;
         }
@@ -73,6 +75,7 @@ public class Task3 {
 
     public static boolean equalNum(int x) {
         int lastNum = x % 10;
+
         while (x / 10 != 0) {
             x = x / 10;
             if (x % 10 == lastNum) {
@@ -82,6 +85,7 @@ public class Task3 {
                 return false;
             }
         }
+
         return true;
     }
 
@@ -100,6 +104,7 @@ public class Task3 {
         int count = 0, num;
         System.out.println("Введите число от 0 до 9:");
         int guessedNum =  random.nextInt(10);
+
         do {
             num = sc.nextInt();
             count++;
