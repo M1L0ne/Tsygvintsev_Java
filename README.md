@@ -21,13 +21,13 @@ public static int sumLastNums(int x) {
 ### Текст задачи
 Полный текст задачи
 ### Алгоритм решения
-public static boolean isPositive(int x) {
+{public static boolean isPositive(int x) {
     if (x > 0) {
         return true;
     }
 
     return false;
-}
+}}
 
 ## Задача 3
 ### Текст задачи
