@@ -119,6 +119,7 @@
 ### Алгоритм решения
     public static String age(int x) {
         int divX = x % 10;
+        
         if (divX == 1) {
             return (x + " год");
         }
@@ -182,6 +183,7 @@
 ### Алгоритм решения
     public static String reverseListNums(int x) {
         String str = "";
+        
         for (int i = x; i >= 0; i--) {
             str = str + i;
         }
@@ -195,6 +197,7 @@
 ### Алгоритм решения
     public static int pow(int x, int y) {
         int result = 1;
+        
         for (int i = 0; i < y; i++) {
             result = result * x;
         }
@@ -208,6 +211,7 @@
 ### Алгоритм решения
     public static boolean equalNum(int x) {
         int lastNum = x % 10;
+        
         while (x / 10 != 0) {
             x = x / 10;
             if (x % 10 == lastNum) {
@@ -243,6 +247,7 @@
         int count = 0, num;
         System.out.println("Введите число от 0 до 9:");
         int guessedNum =  random.nextInt(10);
+        
         do {
             num = sc.nextInt();
             count++;
@@ -260,6 +265,7 @@
 ### Алгоритм решения
     public static int findLast(int[] arr, int x) {
         int iFound = -1;
+        
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == x) {
                 iFound = i;
@@ -276,6 +282,7 @@
     public static int[] add(int[] arr, int x, int pos) {
         int[] newArr = new int[arr.length + 1];
         int j = 0;
+        
         for (int i = 0; i < newArr.length; i++) {
             if (i == pos) {
                 newArr[i] = x;
@@ -284,6 +291,7 @@
             newArr[i] = arr[j];
             j++;
         }
+        
         return newArr;
     }
 
@@ -293,6 +301,7 @@
 ### Алгоритм решения
     public static void reverse(int[] arr) {
         int[] newArr = new int[arr.length];
+        
         for (int i = arr.length-1; i >= 0; i--) {
             System.out.print(arr[i] + " ");
         }
@@ -304,9 +313,11 @@
 ### Алгоритм решения
     public static int[] concat(int[] arr1, int[] arr2) {
         int[] newArr = new int[arr1.length + arr2.length];
+        
         for (int i = 0; i < arr1.length; i++) {
             newArr[i] = arr1[i];
         }
+        
         for (int i = 0; i < arr2.length; i++) {
             newArr[i + arr1.length] = arr2[i];
         }
@@ -320,6 +331,7 @@
 ### Алгоритм решения
     public static int[] deleteNegative(int[] arr) {
         int newArrLength = 0;
+        
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
                 newArrLength++;
@@ -328,11 +340,13 @@
 
         int[] newArr = new int[newArrLength];
         int j = 0;
+        
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > 0) {
                 newArr[j] = arr[i];
                 j++;
             }
         }
+        
         return newArr;
     }
