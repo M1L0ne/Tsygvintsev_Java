@@ -61,7 +61,7 @@ public class Task2 {
     public static double safeDiv(int x, int y) {
         try {
             return x / y;
-        } catch (Exception ArithmeticException) {
+        } catch (ArithmeticException e) {
             return 0;
         }
     }

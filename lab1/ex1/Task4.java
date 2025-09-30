@@ -2,8 +2,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Task4 {
-    public static int a, b, x, y, z, arrSize, arrEl, pos;
-    public static int[] arr = null;
+    private static int x, arrSize, arrEl, pos;
+    private static int[] arr = null;
     public static void main(String[] args) {
         String xString;
 
