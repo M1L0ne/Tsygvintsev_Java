@@ -74,7 +74,7 @@ public class Task1 {
         }
 
         return x;
-    };   
+    }
 
     public static boolean isPositive(int x) {
         if (x > 0) {
