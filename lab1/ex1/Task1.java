@@ -29,10 +29,11 @@ public class Task1 {
                 }
                 break;
             case 3:
+                sc.nextLine();
                 System.out.println("Введите букву: ");
                 try {
                     xChar = sc.nextLine().charAt(0);
-                    System.out.println(isUpperCase(xChar));
+                    System.out.println("Буква заглавная? " + isUpperCase(xChar));
                 } catch (InputMismatchException e) {
                     System.out.println("Ошибка: введена не буква.");
                 }
